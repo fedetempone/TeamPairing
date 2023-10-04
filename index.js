@@ -4,30 +4,33 @@ const JUGADORES = [
       Habilidades: { 
         Ataque: "Bajo", 
         Defensa: "Bueno", 
-        Velocidad: "Regular", 
-        Aceleracion: "Regular", 
+        Velocidad: "Normal", 
+        Aceleracion: "Normal", 
         Posicion: "Arquero" 
-      } 
+      },
+      IMG: './jugadores/metalero.png'
     },
     { 
       Nombre: "Nico", 
       Habilidades: { 
         Ataque: "Bajo", 
         Defensa: "Bajo", 
-        Velocidad: "Regular", 
-        Aceleracion: "Regular", 
+        Velocidad: "Normal", 
+        Aceleracion: "Normal", 
         Posicion: "Arquero" 
-      } 
+      },
+      IMG: './jugadores/none.jpg'
     },
     { 
       Nombre: "Leo", 
       Habilidades: { 
-        Ataque: "Regular", 
+        Ataque: "Normal", 
         Defensa: "Bueno", 
         Velocidad: "Bueno", 
-        Aceleracion: "Regular", 
+        Aceleracion: "Normal", 
         Posicion: "Central" 
-      } 
+      },
+      IMG: './jugadores/leo.png'
     },
     { 
       Nombre: "Nico(nano)", 
@@ -35,119 +38,131 @@ const JUGADORES = [
         Ataque: "Bajo", 
         Defensa: "Bueno", 
         Velocidad: "Bueno", 
-        Aceleracion: "Regular", 
+        Aceleracion: "Normal", 
         Posicion: "Central" 
-      } 
+      } ,
+      IMG: './jugadores/none.jpg'
     },
     { 
       Nombre: "Mati", 
       Habilidades: { 
-        Ataque: "Regular", 
-        Defensa: "Regular", 
-        Velocidad: "Regular", 
-        Aceleracion: "Regular", 
+        Ataque: "Normal", 
+        Defensa: "Normal", 
+        Velocidad: "Normal", 
+        Aceleracion: "Normal", 
         Posicion: "Lateral" 
-      } 
+      } ,
+      IMG: './jugadores/mati.png'
     },
     { 
       Nombre: "Nano", 
       Habilidades: { 
-        Ataque: "Regular", 
+        Ataque: "Normal", 
         Defensa: "Bueno", 
         Velocidad: "Bueno", 
-        Aceleracion: "Regular", 
+        Aceleracion: "Normal", 
         Posicion: "Lateral" 
-      } 
+      } ,
+      IMG: './jugadores/nano.png'
     },
     { 
       Nombre: "Pichu", 
       Habilidades: { 
-        Ataque: "Regular", 
-        Defensa: "Regular", 
+        Ataque: "Normal", 
+        Defensa: "Normal", 
         Velocidad: "Bueno", 
         Aceleracion: "Bueno", 
         Posicion: "Volante" 
-      } 
+      } ,
+      IMG: './jugadores/none.jpg'
     },
     { 
-      Nombre: "Caco", 
+      Nombre: "Fede(Mati)", 
       Habilidades: { 
-        Ataque: "Regular", 
+        Ataque: "Bueno", 
         Defensa: "Bueno", 
         Velocidad: "Bueno", 
-        Aceleracion: "Regular", 
+        Aceleracion: "Normal", 
         Posicion: "Volante" 
-      } 
+      } ,
+      IMG: './jugadores/none.jpg'
     },
     { 
       Nombre: "Cristian", 
       Habilidades: { 
-        Ataque: "Regular", 
+        Ataque: "Normal", 
         Defensa: "Bueno", 
         Velocidad: "Bueno", 
         Aceleracion: "Bueno", 
         Posicion: "Mediocampista" 
-      } 
+      } ,
+      IMG: './jugadores/cristian.png'
     },
     { 
       Nombre: "Juampo", 
       Habilidades: { 
         Ataque: "Bueno", 
-        Defensa: "Regular", 
+        Defensa: "Normal", 
         Velocidad: "Bueno", 
         Aceleracion: "Bueno", 
         Posicion: "Mediocampista" 
-      } 
+      } ,
+      IMG: './jugadores/juampo.png'
     },
     { 
       Nombre: "Marce", 
       Habilidades: { 
         Ataque: "Bueno", 
         Defensa: "Bajo", 
-        Velocidad: "Regular", 
-        Aceleracion: "Regular", 
+        Velocidad: "Normal", 
+        Aceleracion: "Normal", 
         Posicion: "Delantero" 
-      } 
+      } ,
+      IMG: './jugadores/marce.png'
     },
     { 
       Nombre: "Nico(pichi)", 
       Habilidades: { 
         Ataque: "Bueno", 
         Defensa: "Bajo", 
-        Velocidad: "Regular", 
+        Velocidad: "Normal", 
         Aceleracion: "Bajo", 
         Posicion: "Delantero" 
-      } 
+      } ,
+      IMG: './jugadores/pichinico.png'
     },
     { 
-      Nombre: "Manolo(Nano)", 
+      Nombre: "Manolo", 
       Habilidades: { 
         Ataque: "Bajo", 
         Defensa: "Bueno", 
         Velocidad: "Bueno", 
-        Aceleracion: "Regular", 
+        Aceleracion: "Normal", 
         Posicion: "Central" 
-      } 
+      } ,
+      IMG: './jugadores/none.jpg'
     },
     { 
-      Nombre: "Central X", 
+      Nombre: "Caco", 
       Habilidades: { 
-        Ataque: "Bajo", 
+        Ataque: "Normal", 
         Defensa: "Bueno", 
-        Velocidad: "Regular", 
-        Aceleracion: "Regular", 
+        Velocidad: "Bueno", 
+        Aceleracion: "Bueno", 
         Posicion: "Central" 
-      } 
+      } ,
+      IMG: './jugadores/caco.png'
     },
     { 
       Nombre: "Rulo", 
       Habilidades: { 
-        Ataque: "Regular", 
-        Defensa: "Regular", 
-        Velocidad: "Regular", 
+        Ataque: "Normal", 
+        Defensa: "Normal", 
+        Velocidad: "Normal", 
         Aceleracion: "Bajo", 
         Posicion: "Lateral" 
-      } 
+      } ,
+      IMG: './jugadores/none.jpg'
     },
     { 
       Nombre: "Ariel", 
@@ -155,39 +170,43 @@ const JUGADORES = [
         Ataque: "Bajo", 
         Defensa: "Bueno", 
         Velocidad: "Bueno", 
-        Aceleracion: "Regular", 
+        Aceleracion: "Normal", 
         Posicion: "Lateral" 
-      } 
+      } ,
+      IMG: './jugadores/ariel.png'
     },
     { 
       Nombre: "Lean", 
       Habilidades: { 
         Ataque: "Bueno", 
-        Defensa: "Regular", 
+        Defensa: "Normal", 
         Velocidad: "Bueno", 
         Aceleracion: "Bueno", 
         Posicion: "Volante" 
-      } 
+      } ,
+      IMG: './jugadores/lean.png'
     },
     { 
-      Nombre: "Dario(Mati)", 
+      Nombre: "Dario", 
       Habilidades: { 
-        Ataque: "Regular", 
-        Defensa: "Regular", 
+        Ataque: "Normal", 
+        Defensa: "Normal", 
         Velocidad: "Bueno", 
         Aceleracion: "Bueno", 
         Posicion: "Volante" 
-      } 
+      } ,
+      IMG: './jugadores/none.jpg'
     },
     { 
       Nombre: "Seba", 
       Habilidades: { 
         Ataque: "Bueno", 
-        Defensa: "Regular", 
+        Defensa: "Normal", 
         Velocidad: "Bueno", 
         Aceleracion: "Bueno", 
         Posicion: "Mediocampista" 
-      } 
+      } ,
+      IMG: './jugadores/seba.png'
     },
     { 
       Nombre: "FedeT", 
@@ -197,29 +216,83 @@ const JUGADORES = [
         Velocidad: "Bueno", 
         Aceleracion: "Bueno", 
         Posicion: "Mediocampista" 
-      } 
+      } ,
+      IMG: './jugadores/fedet.png'
     },
     { 
       Nombre: "Dany", 
       Habilidades: { 
         Ataque: "Bueno", 
         Defensa: "Bajo", 
-        Velocidad: "Regular", 
+        Velocidad: "Normal", 
         Aceleracion: "Bajo", 
         Posicion: "Delantero" 
-      } 
+      } ,
+      IMG: './jugadores/none.jpg'
     },
     { 
       Nombre: "Lucas", 
       Habilidades: { 
         Ataque: "Bueno", 
-        Defensa: "Regular", 
+        Defensa: "Normal", 
         Velocidad: "Bueno", 
-        Aceleracion: "Regular", 
+        Aceleracion: "Normal", 
         Posicion: "Delantero" 
-      } 
+      } ,
+      IMG: './jugadores/none.jpg'
     }
+    ,
   ];
+
+  //JUGADORES SUPLENTES
+
+  // { 
+  //   Nombre: "Copes", 
+  //   Habilidades: { 
+  //     Ataque: "Normal", 
+  //     Defensa: "Normal", 
+  //     Velocidad: "Normal", 
+  //     Aceleracion: "Normal", 
+  //     Posicion: "Delantero" 
+  //   } ,
+  //   IMG: './jugadores/none.jpg'
+  // }
+
+  // { 
+  //   Nombre: "Polar", 
+  //   Habilidades: { 
+  //     Ataque: "Normal", 
+  //     Defensa: "Normal", 
+  //     Velocidad: "Normal", 
+  //     Aceleracion: "Bajo", 
+  //     Posicion: "Delantero" 
+  //   } ,
+  //   IMG: './jugadores/none.jpg'
+  // }
+
+  // { 
+  //   Nombre: "Copes", 
+  //   Habilidades: { 
+  //     Ataque: "Normal", 
+  //     Defensa: "Normal", 
+  //     Velocidad: "Normal", 
+  //     Aceleracion: "Normal", 
+  //     Posicion: "Delantero" 
+  //   } ,
+  //   IMG: './jugadores/none.jpg'
+  // }
+
+  // { 
+  //   Nombre: "Ivan", 
+  //   Habilidades: { 
+  //     Ataque: "Bueno", 
+  //     Defensa: "Normal", 
+  //     Velocidad: "Bueno", 
+  //     Aceleracion: "Bueno", 
+  //     Posicion: "Delantero" 
+  //   } ,
+  //   IMG: './jugadores/none.jpg'
+  // }
 
   function formarEquipos(jugadores) {
     // Filtrar jugadores por posición
@@ -304,7 +377,7 @@ function mostrarJugadoresEnPagina() {
         div.classList.add(`posicion${numeroClase}`); // Agrega la clase según el número de clase
 
         const img = document.createElement("img");
-        img.src = './istockphoto-517998264-2048x2048.jpg'; // Reemplaza con la URL de la imagen del jugador
+        img.src = jugador.IMG; // Usa la URL de la imagen del jugador del atributo IMG
         img.alt = jugador.Nombre;
 
         const nombre = document.createElement("strong");

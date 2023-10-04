@@ -5,33 +5,37 @@ body{
 .carta {
     border: 2px solid #333;
     border-radius: 10px;
-    width: 150px;
+    width: 8%;
     text-align: center;
-    margin: 10px;
-    padding: 10px;
+    height: 20%;
+    margin: 1%;
+    padding: 0%;
     display: inline-block;
+    word-wrap: break-word;
 }
 
 /* Estilo para la imagen del jugador */
 .carta img {
-    max-width: 100px;
-    max-height: 100px;
-    border-radius: 50%;
-    margin-bottom: 10px;
+    width: 40%;;
+    max-height: 32%;
+    border-radius: 100%;
+    margin-bottom: 0px;
+    margin-top: 5px;
 }
 
 /* Estilo para el nombre del jugador */
 .carta strong {
     display: block;
-    font-size: 1.2em;
-    margin-bottom: 5px;
+    font-size: 16px;
+    margin-bottom: 2px;
 }
 
 /* Estilo para las habilidades */
 .carta p {
-    font-size: 0.9em;
+    font-size: 9px;
     margin: 0;
 }
+
 
 /* Establece el orden de visualización */
 .posicion1{
@@ -166,4 +170,165 @@ body{
     top: 50%;
     transform: translateY(-50%);
     right: 0;
+}
+
+@media (max-width: 435px){
+    .carta strong {
+        font-size: 11px;
+    }
+
+    .carta{
+        width: 40px !important;
+    }
+}
+
+@media (max-width: 700px){
+    .carta{
+        width: 80px;
+        height: 70px;
+    }
+    .carta img{
+        width: 60%;
+        max-height: 57%;
+    }
+    .carta p{
+        display: none;
+    }
+    .posicion1{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .posicion2{
+        position: absolute;
+        top: 10%;
+        left: 10%;
+    }
+
+    .posicion3{
+        position: absolute;
+        top: 10%;
+        left: 75%;
+    }
+
+    .posicion4{
+        position: absolute;
+        top: 10%;
+        left: 31%;
+    }
+
+    .posicion5{
+        position: absolute;
+        top: 10%;
+        left: 54%;
+    }
+
+    .posicion6 {
+        position: absolute;
+        top: 20%;
+        left: 75%;
+    }
+
+    .posicion7 {
+        position: absolute;
+        top: 20%;
+        left: 10%;
+    }
+
+    .posicion8 {
+        position: absolute;
+        top: 20%;
+        left: 31%;
+    }
+
+    .posicion9 {
+        position: absolute;
+        top: 20%;
+        left: 54%;
+    }
+
+    .posicion10 {
+        position: absolute;
+        top: 30%;
+        left: 31%;
+    }
+
+    .posicion11 {
+        position: absolute;
+        top: 30%;
+        left: 54%;
+    }
+
+    /* ************************************* */
+
+    .posicion12{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 89%;
+    }
+
+    .posicion13 {
+        position: absolute;
+        top: 78%;
+        right: 9%;
+    }
+
+    .posicion14 {
+        position: absolute;
+        bottom: 11%;
+        right: 73%;
+    }
+
+    .posicion15 {
+        position: absolute;
+        top: 78%;
+        right: 29%;
+    }
+
+    .posicion16 {
+        position: absolute;
+        bottom: 11%;
+        right: 53%;
+    }
+
+    .posicion17 {
+        position: absolute;
+        bottom: 22%;
+        right: 9%;
+    }
+
+    .posicion18 {
+        position: absolute;
+        top: 67.1%;
+        right: 73%;
+    }
+
+    .posicion19 {
+        position: absolute;
+        bottom: 22%;
+        right: 29%;
+    }
+
+    .posicion20 {
+        position: absolute;
+        top: 67.1%;
+        right: 53%;
+    }
+
+    .posicion21 {
+        position: absolute;
+        top: 56%;
+        right: 29%;
+    }
+
+    .posicion22 {
+        position: absolute;
+        bottom: 33.1%;
+        right: 53%;
+    }
+
 }
