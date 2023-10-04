@@ -253,7 +253,7 @@ const JUGADORES = [
   //     Defensa: "Normal", 
   //     Velocidad: "Normal", 
   //     Aceleracion: "Normal", 
-  //     Posicion: "Delantero" 
+  //     Posicion: "Volante" 
   //   } ,
   //   IMG: './jugadores/none.jpg'
   // }
@@ -269,19 +269,6 @@ const JUGADORES = [
   //   } ,
   //   IMG: './jugadores/none.jpg'
   // }
-
-  // { 
-  //   Nombre: "Copes", 
-  //   Habilidades: { 
-  //     Ataque: "Normal", 
-  //     Defensa: "Normal", 
-  //     Velocidad: "Normal", 
-  //     Aceleracion: "Normal", 
-  //     Posicion: "Delantero" 
-  //   } ,
-  //   IMG: './jugadores/none.jpg'
-  // }
-
   // { 
   //   Nombre: "Ivan", 
   //   Habilidades: { 
@@ -289,7 +276,7 @@ const JUGADORES = [
   //     Defensa: "Normal", 
   //     Velocidad: "Bueno", 
   //     Aceleracion: "Bueno", 
-  //     Posicion: "Delantero" 
+  //     Posicion: "Volante" 
   //   } ,
   //   IMG: './jugadores/none.jpg'
   // }

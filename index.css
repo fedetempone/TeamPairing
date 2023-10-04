@@ -1,5 +1,10 @@
-body{
-    background-color: green;
+.imgBody{
+    width: 100%;
+    height: 800px;
+}
+
+.imgBodyVertical{
+    display: none;
 }
 /* Estilo para las cartas de los jugadores */
 .carta {
@@ -12,6 +17,9 @@ body{
     padding: 0%;
     display: inline-block;
     word-wrap: break-word;
+    background: black;
+    opacity: 0.8;
+    color: white;
 }
 
 /* Estilo para la imagen del jugador */
@@ -32,7 +40,7 @@ body{
 
 /* Estilo para las habilidades */
 .carta p {
-    font-size: 9px;
+    font-size: 10px;
     margin: 0;
 }
 
@@ -47,7 +55,7 @@ body{
 
 .posicion2{
     position: absolute;
-    top: 0;
+    top: 4%;
     left: 11%;
 }
 
@@ -71,7 +79,7 @@ body{
 
 .posicion6{
     position: absolute;
-    top: 0;
+    top: 4%;
     left: 22%;
 }
 
@@ -119,7 +127,7 @@ body{
 
 .posicion18{
     position: absolute;
-    top: 0;
+    top: 4%;
     right: 22%;
 }
 
@@ -155,13 +163,13 @@ body{
 
 .posicion15{
     position: absolute;
-    top: 24%;
+    top: 25%;
     right: 11%;
 }
 
 .posicion13{
     position: absolute;
-    top: 0;
+    top: 4%;
     right: 11%;
 }
 
@@ -183,6 +191,17 @@ body{
 }
 
 @media (max-width: 700px){
+
+    .imgBodyVertical{
+        display: block;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .imgBody{
+        display: none;
+    }
+
     .carta{
         width: 80px;
         height: 70px;
