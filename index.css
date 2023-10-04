@@ -1,3 +1,6 @@
+body{
+    background-color: green;
+}
 /* Estilo para las cartas de los jugadores */
 .carta {
     border: 2px solid #333;
@@ -31,3 +34,136 @@
 }
 
 /* Establece el orden de visualización */
+.posicion1{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.posicion2{
+    position: absolute;
+    top: 0;
+    left: 11%;
+}
+
+.posicion4{
+    position: absolute;
+    top: 25%;
+    left: 11%;
+}
+
+.posicion5{
+    position: absolute;
+    top: 48%;
+    left: 11%;
+}
+
+.posicion3{
+    position: absolute;
+    bottom: 0%;
+    left: 11%;
+}
+
+.posicion6{
+    position: absolute;
+    top: 0;
+    left: 22%;
+}
+
+.posicion8{
+    position: absolute;
+    top: 25%;
+    left: 22%;
+}
+
+.posicion9{
+    position: absolute;
+    top: 48%;
+    left: 22%;
+}
+
+.posicion7{
+    position: absolute;
+    bottom: 0;
+    left: 22%;
+}
+
+.posicion10{
+    position: absolute;
+    top: 25%;
+    left: 33%;
+}
+
+.posicion11{
+    position: absolute;
+    bottom: 29.7%;
+    left: 33%;
+}
+
+.posicion22{
+    position: absolute;
+    bottom: 29.7%;
+    right: 33%;
+}
+
+.posicion21{
+    position: absolute;
+    top: 25%;
+    right: 33%;
+}
+
+.posicion18{
+    position: absolute;
+    top: 0;
+    right: 22%;
+}
+
+.posicion20{
+    position: absolute;
+    top: 25%;
+    right: 22%;
+}
+
+.posicion19{
+    position: absolute;
+    bottom: 30%;
+    right: 22%;
+}
+
+.posicion17{
+    position: absolute;
+    bottom: 0%;
+    right: 22%;
+}
+
+.posicion14{
+    position: absolute;
+    bottom: 0%;
+    right: 11%;
+}
+
+.posicion16{
+    position: absolute;
+    bottom: 30%;
+    right: 11%;
+}
+
+.posicion15{
+    position: absolute;
+    top: 24%;
+    right: 11%;
+}
+
+.posicion13{
+    position: absolute;
+    top: 0;
+    right: 11%;
+}
+
+.posicion12{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}

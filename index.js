@@ -30,7 +30,7 @@ const JUGADORES = [
       } 
     },
     { 
-      Nombre: "Nico amigo Nano", 
+      Nombre: "Nico(nano)", 
       Habilidades: { 
         Ataque: "Bajo", 
         Defensa: "Bueno", 
@@ -110,7 +110,7 @@ const JUGADORES = [
       } 
     },
     { 
-      Nombre: "Pichichi (Nico)", 
+      Nombre: "Nico(pichi)", 
       Habilidades: { 
         Ataque: "Bueno", 
         Defensa: "Bajo", 
@@ -120,7 +120,7 @@ const JUGADORES = [
       } 
     },
     { 
-      Nombre: "Manolo (amigo Nano)", 
+      Nombre: "Manolo(Nano)", 
       Habilidades: { 
         Ataque: "Bajo", 
         Defensa: "Bueno", 
@@ -160,7 +160,7 @@ const JUGADORES = [
       } 
     },
     { 
-      Nombre: "Lean (amigo Nano)", 
+      Nombre: "Lean", 
       Habilidades: { 
         Ataque: "Bueno", 
         Defensa: "Regular", 
@@ -170,7 +170,7 @@ const JUGADORES = [
       } 
     },
     { 
-      Nombre: "Dario (amigo Mati)", 
+      Nombre: "Dario(Mati)", 
       Habilidades: { 
         Ataque: "Regular", 
         Defensa: "Regular", 
@@ -190,7 +190,7 @@ const JUGADORES = [
       } 
     },
     { 
-      Nombre: "Fede T", 
+      Nombre: "FedeT", 
       Habilidades: { 
         Ataque: "Bueno", 
         Defensa: "Bajo", 
@@ -327,29 +327,29 @@ function mostrarJugadoresEnPagina() {
     }
 
     // Recorre el orden de las posiciones y agrega jugadores en ese orden para equipo 1
-    const jugadoresAgregados = new Set();
-    let numeroClase = 1;
-    ordenPosiciones.forEach((posicion) => {
-        equipos.equipo1.forEach((jugador) => {
-            if (jugador.Habilidades.Posicion === posicion && !jugadoresAgregados.has(jugador.Nombre)) {
-                agregarJugadorALista(jugador, equipo1, numeroClase);
-                jugadoresAgregados.add(jugador.Nombre);
-                numeroClase++;
-            }
-        });
+const jugadoresAgregados = new Set();
+let numeroClase = 1;
+ordenPosiciones.forEach((posicion) => {
+    equipos.equipo1.forEach((jugador) => {
+        if (jugador.Habilidades.Posicion === posicion && !jugadoresAgregados.has(jugador.Nombre)) {
+            agregarJugadorALista(jugador, equipo1, numeroClase);
+            jugadoresAgregados.add(jugador.Nombre);
+            numeroClase++;
+        }
     });
+});
 
-    // Recorre el orden de las posiciones y agrega jugadores en ese orden para equipo 2
-    numeroClase = 1; // Reinicializa el número de clase para el equipo 2
-    ordenPosiciones.forEach((posicion) => {
-        equipos.equipo2.forEach((jugador) => {
-            if (jugador.Habilidades.Posicion === posicion && !jugadoresAgregados.has(jugador.Nombre)) {
-                agregarJugadorALista(jugador, equipo2, numeroClase);
-                jugadoresAgregados.add(jugador.Nombre);
-                numeroClase++;
-            }
-        });
+// Recorre el orden de las posiciones y agrega jugadores en ese orden para equipo 2
+numeroClase = 12; // Empieza con el número 12 para el equipo 2
+ordenPosiciones.forEach((posicion) => {
+    equipos.equipo2.forEach((jugador) => {
+        if (jugador.Habilidades.Posicion === posicion && !jugadoresAgregados.has(jugador.Nombre)) {
+            agregarJugadorALista(jugador, equipo2, numeroClase);
+            jugadoresAgregados.add(jugador.Nombre);
+            numeroClase++;
+        }
     });
+});
 }
 
 mostrarJugadoresEnPagina();
