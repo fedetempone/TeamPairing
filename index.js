@@ -281,6 +281,47 @@ const JUGADORES = [
   //   IMG: './jugadores/none.jpg'
   // }
 
+  document.getElementById("alternarCentrales").addEventListener("click", () => {
+    alternarJugadores("Central");
+  });
+  
+  document.getElementById("alternarLaterales").addEventListener("click", () => {
+    alternarJugadores("Lateral");
+  });
+  
+  document.getElementById("alternarMediocampistas").addEventListener("click", () => {
+    alternarJugadores("Mediocampista");
+  });
+  
+  document.getElementById("alternarVolantes").addEventListener("click", () => {
+    alternarJugadores("Volante");
+  });
+  
+  document.getElementById("alternarDelanteros").addEventListener("click", () => {
+    alternarJugadores("Delantero");
+  });
+
+  document.getElementById("alternarCentral").addEventListener("click", () => {
+    alternarJugadoresPorPosicion("Central");
+  });
+  
+  document.getElementById("alternarLateral").addEventListener("click", () => {
+    alternarJugadoresPorPosicion("Lateral");
+  });
+  
+  document.getElementById("alternarMediocampista").addEventListener("click", () => {
+    alternarJugadoresPorPosicion("Mediocampista");
+  });
+  
+  document.getElementById("alternarVolante").addEventListener("click", () => {
+    alternarJugadoresPorPosicion("Volante");
+  });
+  
+  document.getElementById("alternarDelantero").addEventListener("click", () => {
+    alternarJugadoresPorPosicion("Delantero");
+  });
+  
+
   function formarEquipos(jugadores) {
     // Filtrar jugadores por posición
     const arqueros = jugadores.filter((jugador) => jugador.Habilidades.Posicion === 'Arquero');
@@ -414,7 +455,69 @@ ordenPosiciones.forEach((posicion) => {
 
 mostrarJugadoresEnPagina();
 
+function alternarJugadores(posicion) {
+  // Encuentra todos los jugadores de la posición deseada en ambos equipos
+  const jugadoresEquipo1 = equipos.equipo1.filter((jugador) => jugador.Habilidades.Posicion === posicion);
+  const jugadoresEquipo2 = equipos.equipo2.filter((jugador) => jugador.Habilidades.Posicion === posicion);
 
+  // Intercambia los jugadores entre los equipos si se encontraron en ambas posiciones
+  if (jugadoresEquipo1.length === 2 && jugadoresEquipo2.length === 2) {
+    equipos.equipo1 = equipos.equipo1.map((jugador) => {
+      if (jugador.Habilidades.Posicion === posicion) {
+        return jugadoresEquipo2.shift();
+      }
+      return jugador;
+    });
+
+    equipos.equipo2 = equipos.equipo2.map((jugador) => {
+      if (jugador.Habilidades.Posicion === posicion) {
+        return jugadoresEquipo1.shift();
+      }
+      return jugador;
+    });
+
+    // Vuelve a mostrar los jugadores en la página
+    mostrarJugadoresEnPagina();
+  } else {
+    console.log(`No se encontraron suficientes jugadores de ${posicion} en ambos equipos.`);
+  }
+}
+
+function alternarArqueros() {
+  // Encuentra los arqueros de ambos equipos
+  const arqueroEquipo1 = equipos.equipo1.find((jugador) => jugador.Habilidades.Posicion === 'Arquero');
+  const arqueroEquipo2 = equipos.equipo2.find((jugador) => jugador.Habilidades.Posicion === 'Arquero');
+
+  // Intercambia los arqueros entre los equipos si se encontraron ambos
+  if (arqueroEquipo1 && arqueroEquipo2) {
+    const indiceArqueroEquipo1 = equipos.equipo1.indexOf(arqueroEquipo1);
+    const indiceArqueroEquipo2 = equipos.equipo2.indexOf(arqueroEquipo2);
+
+    equipos.equipo1[indiceArqueroEquipo1] = arqueroEquipo2;
+    equipos.equipo2[indiceArqueroEquipo2] = arqueroEquipo1;
+
+    // Vuelve a mostrar los jugadores en la página
+    mostrarJugadoresEnPagina();
+  }
+}
+
+function alternarJugadoresPorPosicion(posicion) {
+  // Encuentra los jugadores de la posición deseada en ambos equipos
+  const jugadoresEquipo1 = equipos.equipo1.filter((jugador) => jugador.Habilidades.Posicion === posicion);
+  const jugadoresEquipo2 = equipos.equipo2.filter((jugador) => jugador.Habilidades.Posicion === posicion);
+
+  // Intercambia un jugador de cada equipo si se encontraron jugadores en ambos equipos
+  if (jugadoresEquipo1.length > 0 && jugadoresEquipo2.length > 0) {
+    const indiceJugadorEquipo1 = equipos.equipo1.findIndex((jugador) => jugador.Habilidades.Posicion === posicion);
+    const indiceJugadorEquipo2 = equipos.equipo2.findIndex((jugador) => jugador.Habilidades.Posicion === posicion);
+
+    equipos.equipo1[indiceJugadorEquipo1] = jugadoresEquipo2[0];
+    equipos.equipo2[indiceJugadorEquipo2] = jugadoresEquipo1[0];
+
+    // Vuelve a mostrar los jugadores en la página
+    mostrarJugadoresEnPagina();
+  }
+}
 
 
 

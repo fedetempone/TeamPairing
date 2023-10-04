@@ -1,6 +1,6 @@
 .imgBody{
     width: 100%;
-    height: 800px;
+    height: 100vh;
 }
 
 .imgBodyVertical{
@@ -18,8 +18,8 @@
     display: inline-block;
     word-wrap: break-word;
     background: black;
-    opacity: 0.8;
     color: white;
+    box-shadow: -3px -1px 6px rgb(138 7 7 / 10%);
 }
 
 /* Estilo para la imagen del jugador */
@@ -43,6 +43,61 @@
     font-size: 10px;
     margin: 0;
 }
+
+.alternarJugadoresX2, .alternarJugadoresIndividuales{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.css-button-shadow-border--red {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+    background: #d90429;
+    margin: 10px;
+  }
+  .css-button-shadow-border--red:hover {
+    background-color: #ef233c;
+  }
+  .css-button-shadow-border--red:active {
+    top: 2px;
+  }
+
+  .css-button-shadow-border--green {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+    background: #57cc99;
+    margin: 10px;
+  }
+  .css-button-shadow-border--green:hover {
+    background-color: #80ed99;
+  }
+  .css-button-shadow-border--green:active {
+    top: 2px;
+  }
 
 
 /* Establece el orden de visualización */
@@ -222,61 +277,61 @@
 
     .posicion2{
         position: absolute;
-        top: 10%;
+        top: 11%;
         left: 10%;
     }
 
     .posicion3{
         position: absolute;
-        top: 10%;
+        top: 11%;
         left: 75%;
     }
 
     .posicion4{
         position: absolute;
-        top: 10%;
+        top: 11%;
         left: 31%;
     }
 
     .posicion5{
         position: absolute;
-        top: 10%;
+        top: 11%;
         left: 54%;
     }
 
     .posicion6 {
         position: absolute;
-        top: 20%;
+        top: 23%;
         left: 75%;
     }
 
     .posicion7 {
         position: absolute;
-        top: 20%;
+        top: 23%;
         left: 10%;
     }
 
     .posicion8 {
         position: absolute;
-        top: 20%;
+        top: 23%;
         left: 31%;
     }
 
     .posicion9 {
         position: absolute;
-        top: 20%;
+        top: 23%;
         left: 54%;
     }
 
     .posicion10 {
         position: absolute;
-        top: 30%;
+        top: 36%;
         left: 31%;
     }
 
     .posicion11 {
         position: absolute;
-        top: 30%;
+        top: 36%;
         left: 54%;
     }
 
@@ -316,37 +371,37 @@
 
     .posicion17 {
         position: absolute;
-        bottom: 22%;
+        bottom: 25%;
         right: 9%;
     }
 
     .posicion18 {
         position: absolute;
-        top: 67.1%;
+        top: 63.8%;
         right: 73%;
     }
 
     .posicion19 {
         position: absolute;
-        bottom: 22%;
+        bottom: 25%;
         right: 29%;
     }
 
     .posicion20 {
         position: absolute;
-        top: 67.1%;
+        top: 63.8%;
         right: 53%;
     }
 
     .posicion21 {
         position: absolute;
-        top: 56%;
+        top: 52%;
         right: 29%;
     }
 
     .posicion22 {
         position: absolute;
-        bottom: 33.1%;
+        bottom: 36.7%;
         right: 53%;
     }
 
